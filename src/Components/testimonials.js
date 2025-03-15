@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import { motion } from "framer-motion";
 import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
@@ -72,7 +72,7 @@ const TestimonialsColumn = ({ className, speed }) => {
               {testimonial.text}
             </p>
             <div className="flex items-center justify-center space-x-4 mt-3">
-              <img
+              <Image
                 src={testimonial.imageSrc}
                 alt={`Avatar of ${testimonial.name}`}
                 className="h-16 w-16 rounded-full"
